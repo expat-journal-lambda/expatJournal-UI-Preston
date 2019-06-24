@@ -1,0 +1,40 @@
+nav {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #062135;
+}
+nav a {
+  padding: 20px;
+  font-size: 1.5rem;
+  color: white;
+}
+header {
+  text-align: center;
+  background-color: #0A314D;
+}
+header h1 {
+  font-size: 3rem;
+}
+header p {
+  font-size: 2rem;
+}
+.body {
+  display: flex;
+  flex-direction: row;
+  padding-top: 50px;
+  justify-content: space-between;
+  border: solid black 1px;
+}
+.body section {
+  flex-flow: column wrap;
+}
+.body section h1 {
+  font-size: 2rem;
+}
+.body section p {
+  width: 40%;
+  font-size: 1.5rem;
+}
+.body .rightAlign {
+  margin-right: 1%;
+}
