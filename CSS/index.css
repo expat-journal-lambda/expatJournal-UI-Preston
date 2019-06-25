@@ -3,14 +3,26 @@ nav {
   justify-content: flex-end;
   background-color: #062135;
 }
+@media (max-width: 500px) {
+  nav {
+    justify-content: center;
+  }
+}
 nav a {
   padding: 20px;
   font-size: 1.5rem;
   color: white;
   text-decoration: none;
 }
+@media (max-width: 500px) {
+  nav a {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
 header {
   text-align: center;
+  background-color: #315082;
 }
 header h1 {
   font-size: 3rem;
@@ -23,25 +35,31 @@ header p {
   flex-direction: row;
   align-content: space-around;
 }
-.sidebar {
-  width: 15%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-content: center;
-  text-align: center;
-  border: solid black 1px;
-}
 .body {
   display: flex;
   flex-direction: row;
   padding-top: 50px;
   justify-content: space-between;
-  width: 75%;
-  float: right;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+@media (max-width: 500px) {
+  .body {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .body img {
+    display: none;
+  }
 }
 .body section {
   flex-flow: column wrap;
+}
+@media (max-width: 500px) {
+  .body section {
+    text-align: center;
+  }
 }
 .body section h1 {
   font-size: 2rem;
@@ -50,8 +68,44 @@ header p {
   width: 40%;
   font-size: 1.5rem;
 }
+@media (max-width: 500px) {
+  .body section p {
+    width: 90%;
+  }
+}
 .body .rightAlign {
   text-align: right;
   float: right;
   width: 300px;
+}
+@media (max-width: 500px) {
+  .body .rightAlign {
+    text-align: center;
+  }
+}
+.profiles {
+  display: flex;
+  flex-flow: row wrap;
+  position: float;
+  text-align: center;
+  justify-content: center;
+}
+.profiles profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  padding: 25px;
+}
+.teamHead {
+  text-align: center;
+}
+footer {
+  display: block;
+  text-align: center;
+}
+.bar {
+  background-color: #0A314D;
+  height: 10px;
+  width: 100%;
 }
