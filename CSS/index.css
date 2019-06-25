@@ -59,6 +59,8 @@ header p {
 @media (max-width: 500px) {
   .body section {
     text-align: center;
+    width: 90%;
+    border-bottom: 3px dashed black;
   }
 }
 .body section h1 {
@@ -81,6 +83,7 @@ header p {
 @media (max-width: 500px) {
   .body .rightAlign {
     text-align: center;
+    width: 90%;
   }
 }
 .profiles {
