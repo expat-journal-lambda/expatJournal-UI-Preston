@@ -6,12 +6,13 @@ nav{
         padding:20px;
         font-size:1.5rem;
         color:white;
+        text-decoration: none;
     }
 }
 
 header{
     text-align: center;
-    background-color:#0A314D;
+    // background-color:#0A314D;
     h1{
         font-size: 3rem;
     }
@@ -20,13 +21,31 @@ header{
     }
 }
 
+.middle{
+    display: flex;
+    flex-direction: row;
+    align-content: space-around
+}
+
+.sidebar{
+    width:15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    text-align:center;
+    border:solid black 1px;
+}
+
 .body{
-    // background-color:#0A314D;
+    // background-color:lightblue;
     display:flex;
     flex-direction:row;
     padding-top: 50px;
     justify-content: space-between;
-    border:solid black 1px;
+    // border:solid black 1px;
+    width:75%;
+    float: right;
     section{
        // background-color: #062135;
         flex-flow: column wrap;
@@ -39,6 +58,9 @@ header{
             }
     }
     .rightAlign{
-        margin-right:1%
+        text-align: right;
+        float: right;
+        width: 300px;
+
     }
 }
