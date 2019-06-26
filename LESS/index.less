@@ -1,0 +1,124 @@
+@import 'variables.less';
+
+nav{
+    display:flex;
+    justify-content: flex-end;
+    background-color: @darkBlue;
+    @media @mobile{
+        // flex-direction:column;
+        justify-content: center;
+    }
+    a{
+        padding:20px;
+        font-size:1.5rem;
+        color:white;
+        text-decoration: none;
+        @media @mobile{
+            padding-left:40px;
+            padding-right:40px;
+        }
+    }
+}
+
+header{
+    text-align: center;
+    background-color: #315082;
+    h1{
+        font-size: 3rem;
+    }
+    p{
+        font-size: 2rem;
+    }
+}
+
+.middle{
+    display: flex;
+    flex-direction: row;
+    align-content: space-around
+}
+
+//VVVVVV Working on getting this to center properly VVVVVV
+.body{
+    display:flex;
+    flex-direction:row;
+    padding-top: 50px;
+    justify-content: space-between;
+    // border:solid black 1px;
+    padding-right: 5%;
+    padding-left: 5%;
+    
+    @media @mobile{
+        flex-direction:column;
+    }
+
+    img{
+        @media @mobile{ 
+            display: none;
+        }
+    }
+
+    section{
+        flex-flow: column wrap;
+        @media @mobile{
+            border:1px solid black;
+            text-align:center;
+            width: 90%;
+            border-bottom: 3px dashed black;
+        }
+   h1{
+       font-size: 2rem;
+    }
+    p{
+        width: 40%;
+        font-size: 1.5rem;
+        @media @mobile{
+            width:90%;
+        }
+    }
+    }
+
+    .rightAlign{
+        text-align: right;
+        float: right;
+        width: 300px;
+        @media @mobile{
+            text-align: center;
+            width: 90%;
+            float:none;
+        }
+
+    }
+}
+.profiles{
+    display:flex;
+    flex-flow:row wrap;
+    position: float;
+    text-align: center;
+    justify-content: center;
+    profile{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        width: 40%;
+        padding:25px;
+    }
+}
+
+.teamHead{
+    text-align: center;
+}
+
+footer{
+    display:block;
+    text-align: center;
+}
+.bar{
+    background-color: #0A314D;
+    height: 10px;
+    width:100%;
+}
+footer{
+    h2{
+        font-size: 3rem;
+    }
+}
