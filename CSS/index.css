@@ -58,6 +58,7 @@ header p {
 }
 @media (max-width: 500px) {
   .body section {
+    border: 1px solid black;
     text-align: center;
     width: 90%;
     border-bottom: 3px dashed black;
@@ -84,6 +85,7 @@ header p {
   .body .rightAlign {
     text-align: center;
     width: 90%;
+    float: none;
   }
 }
 .profiles {
@@ -111,4 +113,7 @@ footer {
   background-color: #0A314D;
   height: 10px;
   width: 100%;
+}
+footer h2 {
+  font-size: 3rem;
 }
