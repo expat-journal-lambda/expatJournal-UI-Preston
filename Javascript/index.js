@@ -3,16 +3,13 @@ class TabLink {
     this.tabElement = tabElement;
     this.tabData = this.tabElement.dataset.tab; 
       
-      
-  
     if(this.tabData === 'all'){
-        this.profiles = document.querySelectorAll('profile');
+        this.profiles = document.querySelectorAll('.card');
         console.log(this.profiles);
     } else {
         this.profiles = document.querySelectorAll(`card[data-tab="${this.tabData}"]`);
         
     }
-  
   
     this.profiles = Array.from(this.profiles).map(card => new TabCard(card));
   
@@ -23,10 +20,9 @@ class TabLink {
     }
   
     selectTab(){
-
         const tabs = document.querySelectorAll('.team');
-        tabs.forEach(tab => {tab.classList.remove('.active')});
-        const cards = document.querySelectorAll('profile');
+        tabs.forEach(tab => {tab.classList.remove('.active-tab')});
+        const cards = document.querySelectorAll('.card');
         cards.forEach(card => {card.style.display = 'none'})
         this.tabElement.classList.add('active-tab');
         this.profiles.forEach(card => card.selectCard());
@@ -35,10 +31,10 @@ class TabLink {
   
   class TabCard {
     constructor(cardElement){
-        thisprofileElement = cardElement;
+        this.profileElement = cardElement;
     }
     selectCard(){
-        thisprofileElement.style.display = 'flex';
+        this.profileElement.style.display = 'flex';
     }
   
   }
