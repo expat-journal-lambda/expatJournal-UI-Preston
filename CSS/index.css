@@ -38,10 +38,12 @@ header p {
 .body {
   display: flex;
   flex-direction: row;
-  padding-top: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   justify-content: space-between;
   padding-right: 5%;
   padding-left: 5%;
+  padding-bottom: 50px;
 }
 @media (max-width: 500px) {
   .body {
@@ -105,15 +107,23 @@ header p {
 .teamHead {
   text-align: center;
 }
-footer {
-  display: block;
-  text-align: center;
-}
 .bar {
   background-color: #0A314D;
   height: 10px;
   width: 100%;
 }
-footer h2 {
+.bottom {
+  display: block;
+  text-align: center;
+  padding-top: 150px;
+}
+.bottom h2 {
   font-size: 3rem;
+}
+.bottom button {
+  border-radius: 25px;
+  font-size: 2rem;
+}
+footer {
+  height: 200px;
 }
