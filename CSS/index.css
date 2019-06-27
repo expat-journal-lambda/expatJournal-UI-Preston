@@ -8,6 +8,10 @@ nav {
     justify-content: center;
   }
 }
+nav .logo {
+  height: 50px;
+  margin-top: 10px;
+}
 nav a {
   padding: 20px;
   font-size: 1.5rem;
@@ -22,9 +26,12 @@ nav a {
 }
 header {
   text-align: center;
-  background-color: #315082;
+}
+header .waves {
+  width: 100%;
 }
 header h1 {
+  background-color: #315082;
   font-size: 3rem;
 }
 header p {
@@ -127,4 +134,12 @@ header p {
 }
 footer {
   height: 200px;
+}
+.navTeam {
+  display: flex;
+  justify-content: space-between;
+}
+.active-tab {
+  color: black;
+  border: 2px solid black;
 }
