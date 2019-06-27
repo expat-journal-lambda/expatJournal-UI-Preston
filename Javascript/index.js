@@ -7,8 +7,8 @@ class TabLink {
         this.profiles = document.querySelectorAll('.card');
         console.log(this.profiles);
     } else {
-        this.profiles = document.querySelectorAll(`card[data-tab="${this.tabData}"]`);
-        
+        this.profiles = document.querySelectorAll(`.card[data-tab="${this.tabData}"]`);
+        console.log(this.profiles);
     }
   
     this.profiles = Array.from(this.profiles).map(card => new TabCard(card));
@@ -32,6 +32,7 @@ class TabLink {
   class TabCard {
     constructor(cardElement){
         this.profileElement = cardElement;
+        
     }
     selectCard(){
         this.profileElement.style.display = 'flex';

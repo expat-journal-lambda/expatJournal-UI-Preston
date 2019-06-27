@@ -2,7 +2,7 @@
 
 nav{
     display:flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     background-color: @darkBlue;
     border-radius:1rem;
 
@@ -47,7 +47,6 @@ header{
     align-content: space-around
 }
 
-//VVVVVV Working on getting this to center properly VVVVVV
 .body{
     display:flex;
     flex-direction:row;
@@ -71,7 +70,6 @@ header{
     section{
         flex-flow: column wrap;
         @media @mobile{
-            border:1px solid black;
             text-align:center;
             width: 90%;
             border-bottom: 3px dashed black;
@@ -112,6 +110,10 @@ header{
         align-items:center;
         width: 40%;
         padding:25px;
+        img{
+            height:150px;
+            width:125px;
+        }
     }
 }
 
